@@ -86,10 +86,10 @@ distord.py dumps:
  - ${out_dir}/params.${xp_id}.png: the parameters of the polynomial transformation and the mesh (json file)
 
      
-If you want to run align.py on our sample, use the following instruction:
+If you want to run distord.py on our sample, use the following instruction:
 
 ```
-$> python3 align.py \
+$> python3 distord.py \
         -seg_ref_path ../data/AM718/segment.align/segment.align.0.png
         -ebsd_ref_path ../data/AM718/ebsd/AM718_ebsd.jpg
         -ang_ref_path ../data/AM718/ang/AM718.ang
