@@ -115,6 +115,12 @@ You can also change the ang phase name/formula with the following argument:
 ```
    
 
+## Acknowledgement:
+The authors would like to acknowledge the stimulating research environment of the SequeL Team (Inria Lille France) and the University of California Santa Barbara, materials department.
+We also thank Olivier Pietquin, Jérémie Mary for helpful discussions. 
+We acknowledge the following agencies for research funding and computing support: CHISTERA IGLU and CPER Nord-Pas de Calais/FEDER
+DATA Advanced data science and technologies 2015-2020.
+
 ## References:
 
 [1] Hansen, Nikolaus. "The CMA evolution strategy: A tutorial." arXiv preprint arXiv:1604.00772 (2016).
