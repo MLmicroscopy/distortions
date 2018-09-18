@@ -5,6 +5,7 @@ from ang.header import Header
 import skimage
 from skimage.transform import PolynomialTransform
 
+ANG_COLUMNS = ['euler1', 'euler2', 'euler3', 'x', 'y', 'iq', 'ci', 'fit', 'phase', 'col9', 'col10', 'col11', 'col12', 'col13']
 
 class Ang(object):
 
@@ -26,9 +27,7 @@ class Ang(object):
         # We need to re-open the file to allow panda to correctly work
         with open(ang_path, "r") as ang_file:
             self._body = pd.read_csv(ang_file, delim_whitespace=True, comment='#', header=None,
-                                     names={'euler1', 'euler2', 'euler3', 'x',
-                                            'y', 'iq', 'ci', 'fit', 'phase',
-                                            'col9', 'col10', 'col11', 'col12', 'col13'})
+                                     names=ANG_COLUMNS)
 
     @property
     def header(self):
@@ -47,6 +46,9 @@ class Ang(object):
         for i, name in enumerate(self._body.columns):
 
             if not ignore_phase and name == 'phase':
+                continue
+
+            if name in ['x', 'y']:
                 continue
 
             values = self._body[name].values
@@ -72,6 +74,7 @@ class Ang(object):
         segment_column[np.where(segment_column > 255 / 2)] = self._header._phases[1].id
 
         self._body["phase"] = segment_column
+        self._body["fit"] = segment_column  # Because ANG sucks and decide to put phase in fit...
 
     def dump_file(self, ang_path):
 
@@ -79,6 +82,7 @@ class Ang(object):
             ang_file.write(self._header.dump())
 
         self._body.to_csv(ang_path,
+                          columns=ANG_COLUMNS,
                           index=False,
                           header=False,
                           sep='\t',

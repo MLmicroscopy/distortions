@@ -30,7 +30,7 @@ def __main__(args=None):
 
         parser.add_argument("-mesh_step", type=float, default=65, help="Use an percentage step size instead of no_points")
         parser.add_argument("-mesh_std", type=float, default=5, help="How far are going to look around the mesh ground (% of the image dimension)")
-        parser.add_argument("-num_sampling", type=int, default=2000, help="How far are going to look around the mesh ground (% of the image dimension)")
+        parser.add_argument("-num_sampling", type=int, default=2500, help="How far are going to look around the mesh ground (% of the image dimension)")
         parser.add_argument("-polynom", type=int, default=3, help="Order of the polynom to compute distorsion")
 
         parser.add_argument("-image_magic", type=lambda b: bool(strtobool(b)), default="False", help="use image magick")
