@@ -20,7 +20,7 @@ DataPoints = collections.namedtuple('DataPoints', ['index', 'points'])
 
 def __main__(args=None):
     if args is None:
-        parser = argparse.ArgumentParser('Image segmentation input!')
+        parser = argparse.ArgumentParser('Learn Polynomial distortion with CMA-ES!')
 
         parser.add_argument("-seg_ref_path", type=str, required=True, help="Path to the segmented image")
         parser.add_argument("-ebsd_ref_path", type=str, required=True, help="Path to the grain image")
@@ -124,7 +124,7 @@ def __main__(args=None):
     out_distord = '{out_dir}/ebsd_distord.{index}.png'.format(out_dir=args.out_dir, index=args.id_xp)
     out_mesh = '{out_dir}/mesh_distord.{index}.png'.format(out_dir=args.out_dir, index=args.id_xp)
     out_image = os.path.join(args.out_dir, "overlap.distord.{}.png".format(args.id_xp))
-    params_path = os.path.join(args.out_dir, "params.{}.txt".format(args.id_xp))
+    params_path = os.path.join(args.out_dir, "params.{}.json".format(args.id_xp))
 
     # Recompute best transformation
     final_ebsd, params = apply_distortion(ebsd=ebsd,
@@ -164,6 +164,7 @@ def __main__(args=None):
             ebsd=os.path.basename(args.ebsd_ref_path),
             segment=os.path.basename(args.seg_ref_path),
             score=best_score,
+            polynom=args.polynom,
             sources=sources.tolist(),
             targets=targets.tolist(),
             params=params.tolist())))

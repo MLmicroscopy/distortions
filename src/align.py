@@ -90,6 +90,7 @@ def __main__(args=None):
                     ebsd=os.path.basename(args.ebsd_ref_path),
                     segment=os.path.basename(args.seg_ref_path),
                     conf=conf,
+                    rescale=(conf["rescale"]["x"], conf["rescale"]["y"]),
                     translate=[int(tx), int(ty)],
                     angle=int(angle))
         results_json = json.dumps(data)
