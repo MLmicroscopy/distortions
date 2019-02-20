@@ -1,5 +1,11 @@
 # DISTORSIONS
 
+* Please cite if you use this code: 
+Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm,
+Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock
+Materials Characterizations
+DOI: 10.1016/j.matchar.2019.01.033 * 
+
 ## Summary:
 
 This repository provides the code to undistord EBSD data (.ang format) based on segmented electron images by using CMA-ES algorithms [1].
