@@ -1,10 +1,10 @@
 # DISTORSIONS
 
-* Please cite if you use this code: 
+* PLEASE CITE, IF YOU USE THIS CODE: 
 Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm,
 Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock
 Materials Characterizations
-DOI: 10.1016/j.matchar.2019.01.033 * 
+DOI: 10.1016/j.matchar.2019.01.033
 
 ## Summary:
 
