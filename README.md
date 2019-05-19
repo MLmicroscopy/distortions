@@ -1,14 +1,30 @@
 # DISTORSIONS
 
-*Please cite this paper if you use this code* : Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm, Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock, Materials Characterizations (2019) DOI: 10.1016/j.matchar.2019.01.033
+*Please cite this paper if you use this code* : 
+Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm, Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock, Materials Characterizations (2019) DOI: 10.1016/j.matchar.2019.01.033
 
-Long version [arxiv](https://arxiv.org/abs/1903.02988) - [hal](https://hal.archives-ouvertes.fr/hal-02062098)
+ - Long version [arxiv](https://arxiv.org/abs/1903.02988) - [hal](https://hal.archives-ouvertes.fr/hal-02062098)
+ - Short version [arxiv](https://arxiv.org/abs/1903.02982) - [hal](https://hal.archives-ouvertes.fr/hal-02062104)
 
-Short version [arxiv](https://arxiv.org/abs/1903.02982) - [hal](https://hal.archives-ouvertes.fr/hal-02062104)
+```
+
+```
+
+
 
 ## Summary:
 
 This repository provides the code to undistord EBSD data (.ang format) based on segmented electron images by using CMA-ES algorithms [1].
+
+## Pipeline
+![alt text](## Pipeline
+![alt text](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
+
+## Pipeline
+![alt text](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
+
+
+http://inspirehep.net/record/1724149/files/algo_global.png
 
 ## Dependencies:
 This works on python3 (not tested on python2). You need to install the following packages
@@ -22,7 +38,7 @@ This works on python3 (not tested on python2). You need to install the following
 The process relies on two scripts:
  - align.py 
  - distord.py
- 
+
 ### Align 
  
 align.py computes a linear transformation (rescale/rotate/translate) of the segmented electron data and fit it to the ebsd size.
