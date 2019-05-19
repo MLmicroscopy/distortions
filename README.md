@@ -7,7 +7,15 @@ Accurate reconstruction of EBSD datasets by a multimodal data approach using an 
  - Short version [arxiv](https://arxiv.org/abs/1903.02982) - [hal](https://hal.archives-ouvertes.fr/hal-02062104)
 
 ```
-
+@article{charpagne2019accurate,
+  title={Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm},
+  author={Charpagne, Marie-Agathe and Strub, Florian and Pollock, Tresa M},
+  journal={Materials Characterization},
+  volume={150},
+  pages={184--198},
+  year={2019},
+  publisher={Elsevier}
+}
 ```
 
 
@@ -18,10 +26,6 @@ This repository provides the code to undistord EBSD data (.ang format) based on 
 
 <img src="https://raw.githubusercontent.com/MLmicroscopy/distortions/master/Ti64comparison_horizontal.png" alt="drawing" style="width:400px;"/>
 
-## Pipeline
-
-<img src="https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png" alt="drawing" style="width:400px;"/>
-
 ## Dependencies:
 This works on python3 (not tested on python2). You need to install the following packages
  - sklean
@@ -29,11 +33,16 @@ This works on python3 (not tested on python2). You need to install the following
  - cma
  - opencv (will be removed)
  
+## Pipeline
+
+<img src="https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png" alt="drawing" style="width:300px;"/>
+
 ## Instructions:
 
 The process relies on two scripts:
  - align.py 
  - distord.py
+
 
 ### Align 
  
