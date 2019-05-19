@@ -1,12 +1,12 @@
 # DISTORSIONS
 
-### PLEASE CITE, IF YOU USE THIS CODE: Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm, Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock, Materials Characterizations (2019) DOI: 10.1016/j.matchar.2019.01.033 
+*Please cite this paper if you use this code* : Accurate reconstruction of EBSD datasets by a multimodal data approach using an evolutionary algorithm, Marie-Agathe Charpagne, Florian Strub, Tresa M. Pollock, Materials Characterizations (2019) DOI: 10.1016/j.matchar.2019.01.033
 
+Long version [arxiv](https://arxiv.org/abs/1903.02988) - [hal](https://hal.archives-ouvertes.fr/hal-02062098)
+Short version [arxiv](https://arxiv.org/abs/1903.02982) - [hal](https://hal.archives-ouvertes.fr/hal-02062104)
 ## Summary:
 
 This repository provides the code to undistord EBSD data (.ang format) based on segmented electron images by using CMA-ES algorithms [1].
-
-[TODO]: add example
 
 ## Dependencies:
 This works on python3 (not tested on python2). You need to install the following packages
@@ -14,9 +14,6 @@ This works on python3 (not tested on python2). You need to install the following
  - skimage
  - cma
  - opencv (will be removed)
-
-## Disortion pipeline:
-[TODO] add sketch
  
 ## Instructions:
 
@@ -127,8 +124,6 @@ DATA Advanced data science and technologies 2015-2020.
 ## References:
 
 [1] Hansen, Nikolaus. "The CMA evolution strategy: A tutorial." arXiv preprint arXiv:1604.00772 (2016).
-
-[TODO]: add final paper
 
  
  
