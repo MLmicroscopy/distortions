@@ -17,11 +17,10 @@ Accurate reconstruction of EBSD datasets by a multimodal data approach using an 
 This repository provides the code to undistord EBSD data (.ang format) based on segmented electron images by using CMA-ES algorithms [1].
 
 ## Pipeline
-![alt text](## Pipeline
-![alt text](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
+![](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
 
 ## Pipeline
-![alt text](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
+![](https://raw.githubusercontent.com/MLmicroscopy/distortions/master/algo_global.png =400x)
 
 
 http://inspirehep.net/record/1724149/files/algo_global.png
